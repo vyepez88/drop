@@ -62,7 +62,8 @@ snakemake aberrantExpression -n
 ```
 
 ## Datasets
-The following publicly-available datasets of gene counts can be used as controls:
+The following publicly-available datasets of gene counts can be used as controls. Please cite them as 
+instructed on each of them.
 
 * 119 non-strand specific fibroblasts: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3887451.svg)](https://doi.org/10.5281/zenodo.3887451)
 

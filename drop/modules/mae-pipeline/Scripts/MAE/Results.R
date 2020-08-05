@@ -89,6 +89,7 @@ setorder(res, contig, position)
 allelicRatioCutoff <- params$allelicRatioCutoff
 res[, MAE := padj <= params$padjCutoff & 
       (altRatio >= allelicRatioCutoff | altRatio <= (1-allelicRatioCutoff))] 
+res[, MAE_ALT := FALSE]
 res[, MAE_ALT := MAE == TRUE & altRatio >= allelicRatioCutoff]
 
 #' Number of samples with significant MAE for alternative events: `r uniqueN(res[MAE_ALT == TRUE, ID])`
